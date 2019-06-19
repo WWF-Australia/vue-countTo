@@ -160,7 +160,7 @@ export default {
       }
 
       this.displayValue = this.formatNumber(this.printVal)
-      this.$emit('callbackCounter', this.printVal);
+      this.$emit('callbackCounter', this.printVal, this.displayValue);
       if (progress < this.localDuration) {
         this.rAF = requestAnimationFrame(this.count);
       } else {
